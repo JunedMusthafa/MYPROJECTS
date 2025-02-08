@@ -20,8 +20,11 @@ public class binary_search {
             System.out.println("Enter the size of the Array");
             int size= sc.nextInt();
             int num[]=new int[size];
-            Scanner sc1 = new Scanner(System.in);
-            int key=sc1.nextInt();
+            for(int i=0;i<num.length;i++){
+               num[i]= sc.nextInt();
+            }
+            int key=sc.nextInt();
+            sc.close();
             System.out.println("The index where the key is found is :"+binarysearch(num,key));
         }
     
